@@ -29,7 +29,7 @@ formElement.addEventListener("submit", async (e) => {
 
     console.log(response);
 
-    window.location.href = `http://127.0.0.1:5500/frontend/pages/home/index.html?cod=${response.token}`;
+    window.location.href = `https://nosso-brasil.onrender.com/pages/home/index.html?cod=${response.token}`;
   } catch (error) {
     console.error(error);
     return;
