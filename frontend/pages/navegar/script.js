@@ -2,6 +2,7 @@ import { header } from "../../components/header/header.js";
 import { useMenu } from "../../components/menu/script.js";
 import { footer } from "../../components/footer/footer.js";
 import { getBlogsByCategory } from "../../utils/blogs.js";
+import { getDadosUser } from "../../utils/user.js";
 
 document.body.innerHTML += header;
 document.body.innerHTML += footer;
@@ -11,9 +12,29 @@ useMenu();
 // Buscar blogs
 const urlParams = new URLSearchParams(window.location.search);
 const category = urlParams.get("category");
+const token = urlParams.get("cod");
 
 const destaquesSection = document.querySelector("#destaques");
 const legendaP = document.querySelector("#legenda");
+
+// Verificar user
+const verficarUser = async (token) => {
+  console.log("Aguardando reposta do servidor...");
+  if (token !== null) {
+    console.log("Buscando dados do usuário...");
+    const response = await getDadosUser(token);
+    if (response.ok) {
+      console.log(response);
+    } else {
+      return null;
+    }
+  } else {
+    console.log("Usuário não tem login");
+    return null;
+  }
+};
+
+verficarUser(token);
 
 const converterTime = (data) => {
   const dateObj = new Date(data);
