@@ -1,4 +1,4 @@
-const url = "http://localhost:8080";
+const url = "https://nossobrasil.onrender.com";
 
 export const createUser = async (email, senha, nome) => {
   try {
