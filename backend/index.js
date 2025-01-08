@@ -21,7 +21,7 @@ const port = process.env.PORT || 8080;
 // Middlewares
 app.use(
   cors({
-    origin: "http://127.0.0.1:5500",
+    origin: "https://nosso-brasil.onrender.com",
     credentials: true,
   })
 );
