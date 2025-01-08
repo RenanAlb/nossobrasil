@@ -113,16 +113,15 @@ router.get("/get-blogs/:category", async (req, res) => {
 
     const getBlogs = await Posts.find({ category }).sort({ data: -1 });
 
-    res
-      .status(200)
-      .json({
-        message: "Blogs buscados com sucesso!",
-        ok: true,
-        response: getBlogs || [],
-      });
+    res.status(200).json({
+      message: "Blogs buscados com sucesso!",
+      ok: true,
+      response: getBlogs || [],
+    });
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: error, ok: false });
   }
 });
+
 module.exports = router;

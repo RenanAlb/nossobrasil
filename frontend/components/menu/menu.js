@@ -12,31 +12,31 @@ export const menu = `
     </div>
     <ul>
       <li><a href="https://nosso-brasil.onrender.com/pages/navegar/index.html?cod=${
-        token || "?"
+        token || null
       }&category=politica">Política</a></li>
       <li><a href="https://nosso-brasil.onrender.com/pages/navegar/index.html?cod=${
-        token || "?"
+        token || null
       }&category=economia">Economia</a></li>
       <li><a href="https://nosso-brasil.onrender.com/pages/navegar/index.html?cod=${
-        token || "?"
+        token || null
       }&category=saude">Sáude</a></li>
       <li><a href="https://nosso-brasil.onrender.com/pages/navegar/index.html?cod=${
-        token || "?"
+        token || null
       }&category=culinaria">Culinária</a></li>
       <li><a href="https://nosso-brasil.onrender.com/pages/navegar/index.html?cod=${
-        token || "?"
+        token || null
       }&category=tecnologia">Tecnologia</a></li>
       <li><a href="https://nosso-brasil.onrender.com/pages/navegar/index.html?cod=${
-        token || "?"
+        token || null
       }&category=esporte">Esporte</a></li>
       <li><a href="https://nosso-brasil.onrender.com/pages/navegar/index.html?cod=${
-        token || "?"
+        token || null
       }&category=cultura">Cultura</a></li>
       <li><a href="https://nosso-brasil.onrender.com/pages/navegar/index.html?cod=${
-        token || "?"
+        token || null
       }&category=ciencia">Ciência</a></li>
       <li><a href="https://nosso-brasil.onrender.com/pages/navegar/index.html?cod=${
-        token || "?"
+        token || null
       }&category=educacao">Educação</a></li>
     </ul>
   </nav>
