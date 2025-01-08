@@ -1,0 +1,16 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+}
+
+:root {
+  --light-gray: rgb(221, 221, 221);
+  --light-gray2: rgb(130, 130, 130);
+  --green-normal: rgb(35, 157, 86);
+  --green-dark: rgb(21, 131, 67);
+}

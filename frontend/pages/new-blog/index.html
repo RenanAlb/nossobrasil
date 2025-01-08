@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novo Blog - nosso.brasil</title>
+    <link rel="stylesheet" href="../../global.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0"
+    />
+  </head>
+  <body>
+    <div class="flex-back">
+      <span class="material-symbols-outlined"> arrow_back </span>
+      Home
+    </div>
+    <div class="criar-blog">
+      <h1>Criar blog</h1>
+      <form id="form">
+        <input id="title" type="text" placeholder="Título" required />
+        <input id="subtitle" type="text" placeholder="Subtítulo" required />
+        <textarea id="content" placeholder="Conteúdo" required></textarea>
+        <small>Categoria: </small>
+        <select id="category" required>
+          <option value="politica">Política</option>
+          <option value="economia">Economia</option>
+          <option value="saude">Saúde</option>
+          <option value="culinaria">Culinária</option>
+          <option value="esporte">Esporte</option>
+          <option value="ciencia">Ciência</option>
+          <option value="tecnologia">Tecnologia</option>
+          <option value="educacao">Educação</option>
+          <option value="cultura">Cultura</option>
+        </select>
+        <small>Escolha uma imagem: </small>
+        <input id="file" type="file" accept="/image*" required />
+        <button id="button" type="submit">Criar novo blog</button>
+      </form>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

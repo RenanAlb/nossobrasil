@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro - nosso.brasil</title>
+    <link rel="stylesheet" href="../../global.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="form">
+      <img src="../../assets/logo2.png" alt="Logo Nosso Brasil" />
+      <h3>Seja bem vindo ao nosso.brasil!</h3>
+      <p>Faça seu cadastro para não perder nenhuma novidade.</p>
+      <small id="message" style="color: red; display: none"
+        >Complete todos os campos antes de prosseguir!</small
+      >
+      <input type="text" id="email" placeholder="Email" />
+      <input type="password" id="senha" placeholder="Senha" />
+      <input type="text" id="nome" placeholder="Nome completo" />
+      <button type="submit" id="button-cadastrar">Cadastrar</button>
+      <small
+        >Já tem uma conta?
+        <a href="http://127.0.0.1:5500/frontend/pages/login/index.html"
+          >Clique aqui</a
+        ></small
+      >
+    </form>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+body {
+  width: 100%;
+  height: auto;
+}
+
+body .flex-back {
+  background-color: white;
+  width: 680px;
+  top: 0;
+  left: 50%;
+  position: fixed;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+  transform: translate(-50%, 0);
+  border-bottom: 1px solid var(--light-gray);
+}
+
+body .flex-back:hover {
+  cursor: pointer;
+}
+
+body .flex-back span {
+  zoom: 80%;
+  margin-right: 10px;
+}
+
+.criar-blog {
+  padding: 10px;
+  max-width: 700px;
+  height: auto;
+  border-radius: 5px;
+  margin: 90px auto 10px auto;
+}
+
+.criar-blog h1 {
+  margin-bottom: 10px;
+  font-size: 1.4em;
+}
+
+.criar-blog form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.criar-blog form input {
+  padding: 12px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid var(--light-gray);
+  outline: none;
+}
+
+.criar-blog form textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid var(--light-gray);
+  outline: none;
+  resize: none;
+  height: 300px;
+  margin: 5px 0;
+}
+
+.criar-blog form select {
+  padding: 12px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid var(--light-gray);
+  outline: none;
+}
+
+.criar-blog form small {
+  margin: 10px 0 5px 0;
+  font-weight: 600;
+}
+
+.criar-blog form button {
+  padding: 10px;
+  border: none;
+  background-color: var(--green-normal);
+  border-radius: 5px;
+  color: white;
+  transition: 0.2s;
+  margin-top: 5px;
+}
+
+.criar-blog form button:hover {
+  background-color: var(--green-dark);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 680px) {
+  body .flex-back {
+    width: 100%;
+  }
+}
