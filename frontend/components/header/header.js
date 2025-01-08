@@ -7,7 +7,7 @@ const verficarUser = async () => {
   const urlParams = new URLSearchParams(window.location.search);
   const token = urlParams.get("cod");
 
-  if (token) {
+  if (token !== null) {
     const response = await getDadosUser(token);
     if (response.ok !== null) {
       console.log(response);
